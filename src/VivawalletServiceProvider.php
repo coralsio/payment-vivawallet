@@ -2,22 +2,27 @@
 
 namespace Corals\Modules\Payment\Vivawallet;
 
+use Corals\Foundation\Providers\BasePackageServiceProvider;
 use Corals\Modules\Payment\Vivawallet\Providers\VivawalletRouteServiceProvider;
-use Illuminate\Support\ServiceProvider;
 use Corals\Settings\Facades\Modules;
 
-class VivawalletServiceProvider extends ServiceProvider
+class VivawalletServiceProvider extends BasePackageServiceProvider
 {
+    /**
+     * @var
+     */
     protected $defer = false;
-
+    /**
+     * @var
+     */
+    protected $packageCode = 'corals-payment-vivawallet';
     /**
      * Bootstrap the application events.
      *
      * @return void
      */
-    public function boot()
+    public function bootPackage()
     {
-        $this->registerModulesPackages();
     }
 
     /**
@@ -25,7 +30,7 @@ class VivawalletServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function registerPackage()
     {
         $this->app->register(VivawalletRouteServiceProvider::class);
     }
