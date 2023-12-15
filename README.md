@@ -1,6 +1,8 @@
 # Corals Payment Vivawallet
 
-This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
+* Laravel Vivawallet Payments Plugin for Laraship Platform plugin that gives you the ability to allow the end-user to do payments using a Viva Wallet payment gateway.
+* Viva Wallet is the first European entirely cloud-based neobank using Microsoft Azure with branches in 23 countries in Europe and is a Principal Member of Visa and Master Card for acquiring and issuing services.
+* Viva Wallet provides businesses of all sizes card acceptance services through innovative Smart Android terminals or the new Android Viva
 
 ## Installation
 
